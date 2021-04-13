@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 // make function called calculate
 const calculate = (arr) => {
-  // remove non-numbers or non-operators from arr.
   // two elements or less than 3 should be NaN
 
 
@@ -9,6 +8,7 @@ const calculate = (arr) => {
   let arr2 = []
   let operand = ['+', '-', '*', '/']
 
+  // remove non-numbers or non-operators from arr.
   arr.forEach((item) => {
     if (typeof item === 'string' || typeof item === 'number' || item === null) {
       if (operand.includes(item)) {
